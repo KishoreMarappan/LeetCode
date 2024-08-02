@@ -1,14 +1,10 @@
 class Solution {
-    public  static String strReverser(String t){
-        StringBuilder  st = new StringBuilder(t);
-        return st.reverse().toString();
-    }
     public String finalString(String s) {
-        String res="";
+        StringBuilder  st = new StringBuilder();
         for(char ch : s.toCharArray()){
-            if(ch!='i') res+=ch;
-            else res=strReverser(res);
+            if(ch!='i') st.append(ch);
+            else st.reverse();
         }
-        return res;
+        return st.toString();
     }
 }
