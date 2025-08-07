@@ -6,7 +6,7 @@ class Solution {
         }
         for (char ch = 'Z'; ch >= 'A'; ch--) {
             if (set.contains(ch) && set.contains(Character.toLowerCase(ch))) {
-                return String.valueOf(ch); // return the first match from highest to lowest
+                return String.valueOf(ch); 
             }
         }
         return "";
