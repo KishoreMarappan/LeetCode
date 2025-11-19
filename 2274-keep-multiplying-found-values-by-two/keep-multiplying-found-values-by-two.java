@@ -6,7 +6,7 @@ class Solution {
             h.add(nums[i]);
         }
         do{
-            if(!h.add(original)){
+            if(h.contains(original)){
                 original=original*2;
             }
             else{
